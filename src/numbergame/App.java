@@ -3,6 +3,8 @@ package numbergame;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import numberGame;
+
 // Task 0: Make the NumberGuessGame work in Game.java
 // Optional: 
 // Task 1: Get getNumGuesses() to work correctly for each Game, and call getBestGame() here in App.java

@@ -1,0 +1,10 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+public class Answer {
+   String label;
+   Category cat;
+
+   Answer(String var1, Category var2) {
+      this.label = var1;
+      this.cat = var2;
+   }
+}

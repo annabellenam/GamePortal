@@ -37,9 +37,10 @@ public class GamePortal {
 
     public static void loadGames() {
         games.clear();
-        games.add(new NumberGuessGame());
-        games.add(new StoreGame());
-        games.add(new Quiz());
+        games.add(new numbergame());
+        games.add(new cardgame());
+        games.add(new asciiart());
+        games.add(new BuzzFeedQuiz.src());
     }
 
     public static void printGameChoices() {
