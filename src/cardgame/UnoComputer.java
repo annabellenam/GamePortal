@@ -1,3 +1,5 @@
+package cardgame;
+
 import java.util.HashMap;
 
 public class UnoComputer {

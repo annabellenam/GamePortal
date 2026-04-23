@@ -1,3 +1,5 @@
+package cardgame;
+
 import processing.core.PImage;
 import processing.core.PApplet;
 

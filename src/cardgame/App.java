@@ -1,4 +1,4 @@
-
+package cardgame;
 
 import processing.core.PApplet;
 import processing.core.PFont;
@@ -87,5 +87,9 @@ public class App extends PApplet {
             }
             cardGame.handleSlap(key);
         }
+    }
+    @Override 
+    public void exit() {
+        dispose();
     }
 }

@@ -1,5 +1,6 @@
 package cardgame;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -12,13 +13,15 @@ public class ERS extends CardGame implements Game {
     public String getScore() {
         return "NOT AVAILABLE";
     }
-    public String getNameGame() {
+    public String getGameName() {
         return "ERS (Egyptian Rat Screw)";
     }
     public void writeHighScore(File f) {
-        f.out.println("NOT AVAILABLE");
+        System.out.println("NOT AVAILABLE");
     }
-       
+    public void play() {
+        PApplet.main("cardgame.App");
+    }
     char[] slapKeys = {'q', 'p', 'z', ','};
 
     boolean faceCardActive = false;

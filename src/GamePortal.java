@@ -4,9 +4,11 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 import Game.Game;
-import Quiz.Quiz;
+import cardgame.ERS;
 import Game.ErrorCheck;
-import Store.StoreGame;
+import numbergame.numberGame;
+import BuzzFeedQuiz.Quiz;
+
 
 public class GamePortal {
     static Scanner sc = new Scanner(System.in);
@@ -36,12 +38,12 @@ public class GamePortal {
     }
 
     public static void loadGames() {
-        games.clear();
-        games.add(new numbergame());
-        games.add(new cardgame());
-        games.add(new asciiart());
-        games.add(new BuzzFeedQuiz.src());
-    }
+    games.clear();
+    games.add(new numberGame(1, 100));
+    games.add(new Quiz());  
+    games.add(new ERS());         
+}
+
 
     public static void printGameChoices() {
         int n = 1;
@@ -50,9 +52,6 @@ public class GamePortal {
         }
     }
 
-    /*
-     * Takes in user input for printing out all games in
-     */
     public static Game getGameChoice() {
         int choice = ErrorCheck.getInt(sc);
         // for it to be numbered, we can't use hashmaps.

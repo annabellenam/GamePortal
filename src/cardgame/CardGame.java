@@ -1,3 +1,5 @@
+package cardgame;
+
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -295,8 +297,5 @@ public class CardGame {
     public Card getLastPlayedCard() { return lastPlayedCard; }
 
     public void drawChoices(PApplet app) {}
-    @Override
-    String getGameName() {
-        return "ERS";
-    }
+    
 }

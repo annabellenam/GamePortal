@@ -1,3 +1,5 @@
+package cardgame;
+
 public class MonopolyHand extends Hand {
     // Bank Pile and Property Pile
     Hand bankPile; // display in row 

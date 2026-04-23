@@ -1,4 +1,4 @@
-
+package numbergame;
 
 import java.util.Scanner;
 import java.util.Random;
@@ -13,7 +13,7 @@ public class numberGame implements Game {
     static Scanner sc = new Scanner(System.in);
     static HashSet<Integer> listofguesses;
     boolean notcorrect = false;
-    numberGame(int low, int high) {
+    public numberGame(int low, int high) {
         guesses = 0;
         System.out.println("I'm thinking of a number + " + low + " to " + high);
         Random r = new Random();
